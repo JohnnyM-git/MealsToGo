@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  SafeAreaView,
-  View,
-  Text,
-  StyleSheet,
-  Platform,
-  StatusBar,
-} from "react-native";
+import { SafeAreaView, StatusBar } from "react-native";
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
@@ -26,7 +19,7 @@ const RestaurantListContainer = styled.View`
   background-color: blue;
 `;
 
-const isAndroid = Platform.OS === "android";
+// const isAndroid = Platform.OS === "android";
 export const RestaurantsScreen = () => (
   <SafeArea>
     <SearchContainer>
